@@ -1,0 +1,133 @@
+/* Mesmos estilos globais para consistência */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Mesmo estilo de 'card' centralizado */
+.welcome-card {
+    background: #ffffff;
+    padding: 50px 40px; /* Um pouco mais de padding vertical */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Um pouco mais larga que o login */
+    text-align: center; /* Centraliza todo o texto */
+}
+
+.welcome-card h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+.welcome-card p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilo do botão (mesmo do login) */
+.btn-logout {
+    display: inline-block; /* Importante para o padding funcionar em link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    padding: 12px 24px;
+    background-color: #007bff; /* Cor vermelha para 'Sair' */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    .welcome-card {
+        padding: 30px 20px;
+    }
+    .welcome-card h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-card h2 {
+    margin-bottom: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 20px;
+    }
+}
